@@ -15,7 +15,8 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -23,19 +24,56 @@
 </head>
 
 <body>
+  <header class="header">
+    <div class="header-content">
+      <div class="header-branding">
+        <img src="img/logotype.png" alt="NOPE">
+      </div>
+      <div class="header-links">
+        <a href="https://nopefinance.gitbook.io/nope-finance/">Read the Docs</a>
+      </div>
+    </div>
+  </header>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <section class="hero">
+    <img src="img/hero-splash.png" alt="NOPE finance - gain the best yield on your assets">
+    <div class="intro">
+      <h1>Gain the best yield on your assets</h1>
+      <p>Auto-compound LP tokens on Solana</p>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+      <div class="cta">
+        <a href="https://discord.gg/MaMdTr3qXj" target="_blank" class="mr8"><button class="btn btn-primary">Join the Community</button></a>
+        <a href="https://nopefinance.gitbook.io/nope-finance/" target="_blank"><button class="btn btn-transparent">Learn More</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner banner-light">
+    <article>social media links</article>
+  </section>
+
+  <section class="info">
+    <article>
+      <div class="hlabel">what is nope?</div>
+      <h2>Auto-Compound LP Tokens</h2>
+      <p>Our flagship product auto compounds your LP tokens with associated yield farms.</p>
+      <p>Deposit tokens with us for proportional ownership of our autostaking vault via a NOPE AVLP token.</p>
+    </article>
+    <article>
+      <div class="hlabel">why use nope?</div>
+      <h2>Compound while you sleep</h2>
+      <p>Solana’s high interest LP farms and low transaction fees means continual compounding is necessary for maximum yield.</p>
+      <p>Nope compounds while you sleep to maximize your yield.</p>
+    </article>
+  </section>
+
+  <section class="banner banner-dark">
+    <button class="btn btn-primary">Join the Community</button>
+  </section>
+
+  <footer>
+    
+  </footer>
 </body>
 
 </html>
