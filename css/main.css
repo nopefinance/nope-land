@@ -89,12 +89,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-  h1 { font-size: 42px; }
+  h1 { 
+    font-size: 42px;
+    line-height: 1.2;
+  }
   h2 { 
     font-size: 32px;
     margin-top: 12px;
     margin-bottom: 24px;
-  } 
+    line-height: .75;
+  }
+
   p {
     color: rgba(255,255,255, 0.75);
   }
@@ -122,14 +127,15 @@ textarea {
 
   a:hover {
     text-decoration: underline;
+    cursor: pointer;
   }
 
   .btn {
     background: #FB936C;
     border: 1px solid #FB936C;
     color: #fff;
-    font-weight: 800;
-    height: 60px;
+    font-weight: 600;
+    height: 54px;
     text-align: center;
     border-radius: 4px;
     padding: 12px 24px;
@@ -137,6 +143,7 @@ textarea {
 
   .btn:hover {
     cursor: pointer;
+    background: #fa885e;
   }
 
   .btn-transparent {
@@ -145,12 +152,20 @@ textarea {
     border: 3px solid #FB936C;
   }
 
+  .btn-transparent:hover {
+    background: #FB936C;
+    color: #fff;
+  }
+
   .hlabel {
     text-transform: uppercase;
     color: #FB936C;
     font-weight: 600;
     font-size: 18px;
+    margin-bottom: 16px;
   }
+
+
 
   article {
     margin: 0 18px;
@@ -164,11 +179,18 @@ textarea {
   .header-content {
     display: flex;
     justify-content: space-between;
-    margin: 12px 18px;
+    margin: 12px auto;
+    padding: 0 18px;
+    max-width: 960px;
   }
 
   footer {
     height: 320px;
+  }
+
+  section {
+    max-width: 960px;
+    margin: 0 auto;
   }
 
   .hero {
@@ -180,11 +202,20 @@ textarea {
   .hero > img {
     grid-column: 3 / span 1;
     grid-row: 2 / span 1;
+    position: relative;
+    top: -36px;
+    height: 90%;
+    left: 18px;
   }
 
   .hero > .intro {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1; 
+  }
+
+  .intro > p {
+    font-size: 23px;
+    margin-bottom: 36px;
   }
 
   .info > article:first-child {
