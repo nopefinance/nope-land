@@ -89,17 +89,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-  h1 { 
-    font-size: 42px;
-    line-height: 1.2;
-  }
-  h2 { 
-    font-size: 32px;
-    margin-top: 12px;
-    margin-bottom: 24px;
-    line-height: .75;
-  }
-
   p {
     color: rgba(255,255,255, 0.75);
   }
@@ -139,6 +128,7 @@ textarea {
     text-align: center;
     border-radius: 4px;
     padding: 12px 24px;
+    margin-bottom: 8px;
   }
 
   .btn:hover {
@@ -191,18 +181,51 @@ textarea {
 
   .hero {
     display: grid;
-    grid-template-columns: 42px 480px 370px 42px;
+    grid-template-columns: 18px 284px 18px;
     grid-template-rows: 160px auto 160px;
   }
 
   .hero > img {
+    display: none;
     grid-column: 3 / span 1;
     grid-row: 2 / span 1;
     position: relative;
     top: -36px;
-    height: 90%;
-    left: 18px;
+    width: 100%;
   }
+
+  h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  @media (min-width:768px) {
+    h1 { font-size: 42px; }
+    h2 { 
+      font-size: 32px;
+      margin-top: 12px;
+      margin-bottom: 24px;
+    }
+
+    .hero {
+      grid-template-columns: 42px 420px minmax(auto, 370px) 42px;
+    }
+    .hero > img {
+      display: block;
+    }
+  }
+
+  @media (min-width:1024px) {
+    .hero {
+      grid-template-columns: 42px 480px 370px 42px;
+    }
+  }
+
 
   .hero > .intro {
     grid-column: 2 / span 1;
